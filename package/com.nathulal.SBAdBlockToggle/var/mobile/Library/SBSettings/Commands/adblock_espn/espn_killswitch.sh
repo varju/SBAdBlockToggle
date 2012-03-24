@@ -18,5 +18,3 @@ killall ESPN\ Local\ Chicago;
 killall BowlBound; 
 
 rm /tmp/wait_on_espn_killswitch;
-
-#( exec /private/var/mobile/Library/SBSettings/Commands/adblock_espn/espn_killswitch.sh ) \nwhile [ -f /tmp/wait_on_espn_killswitch ] \ndo \necho \"waiting for ESPN KillSwitch to finish\" \ndone \n

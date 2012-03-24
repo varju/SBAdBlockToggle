@@ -192,8 +192,6 @@ if [ -d /User/Applications/*/Textfree.app/SC_Info ]
 	then
 # empty the directory thats not empty
 find /User/Applications/*/Textfree.app -type d -name "SC_Info" | while read FILENAME; do NEWNAME="${FILENAME/\/Textfree.app\/SC_Info//Library/Caches}"; rm -rf "${NEWNAME}";
-# create directory with read access only
-#mkdir "${NEWNAME}"; chmod 555 "${NEWNAME}" ;
 done
 fi;
 
