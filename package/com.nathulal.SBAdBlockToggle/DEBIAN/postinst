@@ -3,9 +3,53 @@
 if [ -f /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png ]
 then
 	rm /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
-fi
+fi;
+
+plutil -rmkey WebKitDNSPrefetchingEnabled /private/var/mobile/Library/Preferences/com.apple.mobilesafari.plist;
+
+#plutil -dict -WebKitDNSPrefetchingEnabled /private/var/mobile/Library/Preferences/com.apple.mobilesafari.plist;
+
+#plutil -key WebKitDNSPrefetchingEnabled -0 /private/var/mobile/Library/Preferences/com.apple.mobilesafari.plist;
 
 cp /var/mobile/Library/SBSettings/Toggles/AdBlock/missingImage.png /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
+
+# copy new exec file to proper location
+#if [ -f /User/Applications/*/ESPN\ SFTC.app/ESPN\ SFTC_ ]
+#	then
+#	 find /User/Applications/*/ESPN\ SFTC.app -type f -name "ESPN\ SFTC_" | while read FILENAME; do
+#	 rm "$FILENAME"; done
+	 # change plist back
+#	 find /User/Applications/*/ESPN\ SFTC.app -type f -name "Info.plist" | while read FILENAME; do
+#	 cp "$FILENAME" /var/tmp/ESPN\ SFTC.plist;
+	 # change key value in plist
+#	 plutil -key CFBundleExecutable -value ESPN\ SFTC /var/tmp/ESPN\ SFTC.plist;
+#	 mv /var/tmp/ESPN\ SFTC.plist "$FILENAME";
+#done
+#fi;
+#if [ -f /User/Applications/*/ScoreCenter.app/ScoreCenter_ ]
+#	then
+#	 find /User/Applications/*/ScoreCenter.app -type f -name "ScoreCenter_" | while read FILENAME; do
+#	 rm "$FILENAME"; done
+	 # change plist back
+#	 find /User/Applications/*/ScoreCenter.app -type f -name "Info.plist" | while read FILENAME; do
+#	 cp "$FILENAME" /var/tmp/ScoreCenter.plist;
+	 # change key value in plist
+#	 plutil -key CFBundleExecutable -value ScoreCenter /var/tmp/ScoreCenter.plist;
+#	 mv /var/tmp/ScoreCenter.plist "$FILENAME";
+#done
+#fi;
+#if [ -f /User/Applications/*/ESPN\ Local\ Boston.app/ESPN\ Local\ Boston_ ]
+#	then
+#	 find /User/Applications/*/ESPN\ Local\ Boston.app -type f -name "ESPN\ Local\ Boston_" | while read FILENAME; do
+#	 rm "$FILENAME"; done
+	 # change plist back
+#	 find /User/Applications/*/ESPN\ Local\ Boston.app -type f -name "Info.plist" | while read FILENAME; do
+#	 cp "$FILENAME" /var/tmp/ESPN\ Local\ Boston.plist;
+	 # change key value in plist
+#	 plutil -key CFBundleExecutable -value ESPN\ Local\ Boston /var/tmp/ESPN\ Local\ Boston.plist;
+#	 mv /var/tmp/ESPN\ Local\ Boston.plist "$FILENAME";
+#done
+#fi;
 
 /bin/launchctl load -w /System/Library/LaunchDaemons/com.bigboss.sbsettingsd.plist
 declare -a cydia

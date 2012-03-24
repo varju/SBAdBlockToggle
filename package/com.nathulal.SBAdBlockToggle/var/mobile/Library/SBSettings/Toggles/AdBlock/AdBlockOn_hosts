@@ -1,7 +1,7 @@
-## VERSION 2.0.4.4 ##
+## VERSION 2.0.6-4 ##
+www.ModYouri.com
 0.0.0.0# Ad Blocking Hosts File
 #
-# Free to distribute without limits. Link back to xsellize.com please!
 # Official thread can be found here: http://modyouri.com/showthread.php?t=1
 
 # localhost is used to configure the loopback interface when the system is booting. Do not change this entry.
@@ -10,6 +10,155 @@
 ::1				localhost 
 fe80::1%lo0		localhost
 
+0.0.0.0 www.bitlogik.com ## UConnect
+0.0.0.0 bitlogik.com ## UConnect
+0.0.0.0 fs.danalsoft.com
+0.0.0.0 ad.cauly.co.kr
+0.0.0.0 banner.danalsoft.com
+0.0.0.0 www.ads.yimg.com ## Yahoo
+0.0.0.0 ads.yimg.com ## Yahoo
+## START HEYWIRE ##
+0.0.0.0 a.jumptap.com
+0.0.0.0 adelh.smaato.com
+0.0.0.0 img.ads1.mojiva.com
+0.0.0.0 inpine.com
+0.0.0.0 ws.tapjoyads.com
+0.0.0.0 ws1.tapjoyads.com
+0.0.0.0 smaato.net
+0.0.0.0 f01.smaato.net
+0.0.0.0 f02.smaato.net
+0.0.0.0 f03.smaato.net
+0.0.0.0 f04.smaato.net
+0.0.0.0 f05.smaato.net
+0.0.0.0 f06.smaato.net
+0.0.0.0 f07.smaato.net
+0.0.0.0 f08.smaato.net
+0.0.0.0 f09.smaato.net
+0.0.0.0 c10.smaato.net
+0.0.0.0 c11.smaato.net
+0.0.0.0 c12.smaato.net
+0.0.0.0 c13.smaato.net
+0.0.0.0 c14.smaato.net
+0.0.0.0 c15.smaato.net
+0.0.0.0 c16.smaato.net
+0.0.0.0 c17.smaato.net
+0.0.0.0 c18.smaato.net
+0.0.0.0 c19.smaato.net
+0.0.0.0 c20.smaato.net
+0.0.0.0 c21.smaato.net
+0.0.0.0 c22.smaato.net
+0.0.0.0 c23.smaato.net
+0.0.0.0 c24.smaato.net
+0.0.0.0 c25.smaato.net
+0.0.0.0 c26.smaato.net
+0.0.0.0 c27.smaato.net
+0.0.0.0 c28.smaato.net
+0.0.0.0 c29.smaato.net
+0.0.0.0 c30.smaato.net
+0.0.0.0 c31.smaato.net
+0.0.0.0 c32.smaato.net
+0.0.0.0 c33.smaato.net
+0.0.0.0 c34.smaato.net
+0.0.0.0 c35.smaato.net
+0.0.0.0 c36.smaato.net
+0.0.0.0 c37.smaato.net
+0.0.0.0 c38.smaato.net
+0.0.0.0 c39.smaato.net
+## END HEYWIRE ##
+0.0.0.0 mobileads.svc.primedia.com
+0.0.0.0 71.wapad.fr
+0.0.0.0 7.adpub.mobi
+0.0.0.0 pub.airweb.fr
+0.0.0.0 host1.adhese.be
+0.0.0.0 host2.adhese.be
+0.0.0.0 host3.adhese.be
+0.0.0.0 host4.adhese.be
+0.0.0.0 ads.adhsm.adhese.com
+0.0.0.0 pool.adhsm.adhese.com
+0.0.0.0 pxc1.adscale.de
+0.0.0.0 imagesrv.adition.com
+0.0.0.0 ch1.adscale.de
+0.0.0.0 ch2.adscale.de
+0.0.0.0 ch3.adscale.de
+0.0.0.0 ch4.adscale.de
+0.0.0.0 ch5.adscale.de
+0.0.0.0 ch6.adscale.de
+0.0.0.0 ch7.adscale.de
+0.0.0.0 ch8.adscale.de
+0.0.0.0 ch9.adscale.de
+0.0.0.0 adscale.de
+0.0.0.0 ads.geornmd.net ## ABC News
+0.0.0.0 riseuplabs.com ## 3D WALLPAPERS
+## START ESPN SCORECENTER ##
+#0.0.0.0 adsatt.espn.go.com
+0.0.0.0 58.242.132.206.in-addr.arpa
+0.0.0.0 dd.ringleaderdigital.com
+0.0.0.0 w88.m.espn.go.com
+0.0.0.0 a.m.go.com
+0.0.0.0 wdgwespmasc.112.2o7.net
+0.0.0.0 am.espn.go.com
+## END ESPN SCORECENTER ##
+## START iADS by Apple ##
+0.0.0.0 iadsdk.apple.com
+0.0.0.0 iadc.qwapi.com
+## END iADS by Apple ##
+## START POCKET FROGS ##
+0.0.0.0 ecs-204-236-225-110.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-111.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-112.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-113.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-114.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-115.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-116.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-117.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-118.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-119.compute-1.amazonaws.com
+0.0.0.0 ecs-204-236-225-120.compute-1.amazonaws.com
+0.0.0.0 ngpipes.ngmoco.com
+## END POCKET FROGS ##
+0.0.0.0 www.4th-screen.net
+0.0.0.0 www.mpression.net
+0.0.0.0 4th-screen.net
+0.0.0.0 mpression.net
+0.0.0.0 www.4th-screen.com
+0.0.0.0 4th-screen.com
+0.0.0.0 www.ads.aapl.shazamid.com
+0.0.0.0 www.ads.aapl.shazamid.com
+0.0.0.0 ads.aapl.shazamid.com
+0.0.0.0 .ads.aapl.shazamid.com
+0.0.0.0 ads.aapl.shazamid.com
+0.0.0.0 bo.jumptap.com
+0.0.0.0 vg.jumptap.com
+0.0.0.0 a.jumptap.com
+0.0.0.0 connections.jumptap.com
+0.0.0.0 sa.jumptap.com
+0.0.0.0 ads20.mojiva.com
+0.0.0.0 ads19.mojiva.com
+0.0.0.0 ads18.mojiva.com
+0.0.0.0 ads17.mojiva.com
+0.0.0.0 ads16.mojiva.com
+0.0.0.0 ads15.mojiva.com
+0.0.0.0 ads14.mojiva.com
+0.0.0.0 ads13.mojiva.com
+0.0.0.0 ads12.mojiva.com
+0.0.0.0 ads11.mojiva.com
+0.0.0.0 ads10.mojiva.com
+0.0.0.0 ads9.mojiva.com
+0.0.0.0 ads8.mojiva.com
+0.0.0.0 ads7.mojiva.com
+0.0.0.0 ads6.mojiva.com
+0.0.0.0 ads5.mojiva.com
+0.0.0.0 ads4.mojiva.com
+0.0.0.0 ads3.mojiva.com
+0.0.0.0 ads2.mojiva.com
+0.0.0.0 ads1.mojiva.com
+0.0.0.0 ads.mojiva.com
+0.0.0.0 mojiva.com
+0.0.0.0 borange.com
+0.0.0.0 www.borange.com
+0.0.0.0 adn-iphone.fusionads.net
+0.0.0.0 fusionads.net
+0.0.0.0 anrdoezrs.net
 0.0.0.0 ads.mgnetwork.com
 0.0.0.0 ringleaderdigital.com
 0.0.0.0 a.ringleaderdigital.com
@@ -70,9 +219,8 @@ fe80::1%lo0		localhost
 0.0.0.0 https://209-20-88-170.slicehost.net
 0.0.0.0 https://209-20-88-171.slicehost.net
 0.0.0.0 slicehost.net
-0.0.0.0 http://i.tv.s3.amazonaws.com
-0.0.0.0 http://data.i.tv
-0.0.0.0 http://209.20.80.10
+0.0.0.0 i.tv.s3.amazonaws.com
+0.0.0.0 data.i.tv
 0.0.0.0 server-216-137-39-124.stl2.cloudfront.net
 0.0.0.0 server-216-137-39-174.stl2.cloudfront.net
 0.0.0.0 server-216-137-39-200.stl2.cloudfront.net
@@ -112,9 +260,9 @@ fe80::1%lo0		localhost
 0.0.0.0 stop_international+.kia.com
 ## END 10/13/09 ## IMEEM APP
 ## START 9/29/09 ##
-127.0.0.1 www.icarusstudios.com
-127.0.0.1 services.resolution.se
-127.0.0.1 www.tigerstylegames.com
+0.0.0.0 www.icarusstudios.com
+0.0.0.0 services.resolution.se
+0.0.0.0 www.tigerstylegames.com
 ## END 9/29/09 ##
 ## START 9/22/09 ##
 0.0.0.0 ad.aim4media.com
@@ -233,16 +381,12 @@ fe80::1%lo0		localhost
 0.0.0.0 site.www.adbrite.com
 0.0.0.0 pic.adbrite.com
 0.0.0.0 vid.adbrite.com
-0.0.0.0 http://216.236.237.201
-0.0.0.0 http://72.21.81.133
 0.0.0.0 img.qwapi.com
 0.0.0.0 adbrite.com
 0.0.0.0 www.adbrite.com
 0.0.0.0 a.qwapi.com
 0.0.0.0 ad.qwapi.com
 0.0.0.0 img.ads.mojiva.com
-0.0.0.0 http://128.242.186.208
-0.0.0.0 http://128.242.186.209
 0.0.0.0 event-img.qwapi.com
 0.0.0.0 nic.ad.jp
 0.0.0.0 claw.gogoapps.com
@@ -309,12 +453,12 @@ fe80::1%lo0		localhost
 0.0.0.0 adserver-live.yoc.mobi
 0.0.0.0 admax.nexage.com
 0.0.0.0 mm.admob.com
-0.0.0.0 http://*.googlesyndication.com/*
+0.0.0.0 googlesyndication.com
 0.0.0.0 d1.openx.org
-0.0.0.0 openx.detik.com/*
+0.0.0.0 openx.detik.com
 0.0.0.0 extra.thebigboss.org
-0.0.0.0 *.ads.mp.mydas.mobi
-0.0.0.0 extra.thebigboss.org/*
+0.0.0.0 ads.mp.mydas.mobi
+0.0.0.0 extra.thebigboss.org
 0.0.0.0 bank01.ads.mp.mydas.mobi
 0.0.0.0 bank02.ads.mp.mydas.mobi
 0.0.0.0 bank03.ads.mp.mydas.mobi
@@ -346,9 +490,8 @@ fe80::1%lo0		localhost
 0.0.0.0 bank29.ads.mp.mydas.mobi
 0.0.0.0 bank30.ads.mp.mydas.mobi
 0.0.0.0 bank31.ads.mp.mydas.mobi
-#0.0.0.0 http://googleads.g.doubleclick.net
-#0.0.0.0 googleads.g.doubleclick.net
-#0.0.0.0 g.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 g.doubleclick.net
 0.0.0.0 ad.doubleclick.com
 0.0.0.0 ad.doubleclick.be
 0.0.0.0 ad.doubleclick.net
@@ -395,6 +538,8 @@ fe80::1%lo0		localhost
 0.0.0.0 pagead8.googlesyndication.com
 0.0.0.0 pagead9.googlesyndication.com
 0.0.0.0 adservices.google.com
+0.0.0.0 services.google.com
+0.0.0.0 adsenseformobileapps.com
 0.0.0.0 imageads.googleadservices.com #[Ewido.TrackingCookie.Googleadservices]
 0.0.0.0 imageads1.googleadservices.com
 0.0.0.0 imageads2.googleadservices.com
@@ -1137,11 +1282,10 @@ fe80::1%lo0		localhost
 0.0.0.0 adsag.com
 0.0.0.0 adsatt.abc.starwave.com
 0.0.0.0 Adsatt.ABCNews.starwave.com
-0.0.0.0 adsatt.espn.go.com
+## 0.0.0.0 adsatt.espn.go.com ## ESPN Streak
 0.0.0.0 adsatt.espn.starwave.com
 0.0.0.0 Adsatt.go.starwave.com
 0.0.0.0 adsbrite.com
-0.0.0.0 adscale.de
 0.0.0.0 adscholar.com
 0.0.0.0 adscpm.com
 0.0.0.0 adsdaq.com
@@ -9422,8 +9566,8 @@ fe80::1%lo0		localhost
 0.0.0.0 ad.itmedia.co.jp
 0.0.0.0 ads.lanetro.com
 0.0.0.0 ads.traderonline.com 
-0.0.0.0 http.content.ru4.com
-0.0.0.0 http.edge.ru4.com
+0.0.0.0 content.ru4.com
+0.0.0.0 edge.ru4.com
 0.0.0.0 http3.edge.ru4.com
 0.0.0.0 http8.edge.ru4.com
 0.0.0.0 http9.edge.ru4.com
@@ -9646,8 +9790,7 @@ fe80::1%lo0		localhost
 0.0.0.0 www.vacationegg.com
 0.0.0.0 media.baventures.com
 0.0.0.0 www.ifriendshdtv.com
-# Hungarian Ad Servers
-# Source: http://pgl.yoyo.org/adservers/
+0.0.0.0 pgl.yoyo.org # Hungarian Ad Servers
 # Added by: balazs.lato@gmail.com on 9/18/2008
 0.0.0.0 adverticum.hu
 0.0.0.0 ads.sg.hu

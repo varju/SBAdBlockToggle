@@ -33,7 +33,8 @@ then
 	then
 		rm /tmp/adblock_hosts
 	fi;
-	wget http://www.modyouri.com/adblock_hosts/hosts -O /tmp/adblock_hosts
+	wget http://modyouri.com/adblock_hosts/hosts.bz2 -O /tmp/adblock_hosts.bz2
+	bunzip2 /tmp/adblock_hosts.bz2
 	if [ -f /tmp/adblock_hosts ]
 	then
 		FILESIZE=`stat -c %s /tmp/adblock_hosts`

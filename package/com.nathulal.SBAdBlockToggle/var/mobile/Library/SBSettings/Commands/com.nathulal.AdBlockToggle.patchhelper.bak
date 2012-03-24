@@ -413,18 +413,7 @@ find /User/Applications/*/MyYearbook.app -type d -name "SC_Info" | while read FI
 done
 fi;
 
-# iFallDown
-if [ -f /User/Applications/*/iFallDown.app/pocketearth_ad.png ]; 
-	then 
-	find /User/Applications/*/iFallDown.app/pocketearth_ad.png | while read FILENAME; do NEWNAME=${FILENAME%.*}.bak; mv "${FILENAME}" "${NEWNAME}"; done
-	find /User/Applications/*/iFallDown.app/raceofdeath_button.png | while read FILENAME; do NEWNAME=${FILENAME%.*}.bak; mv "${FILENAME}" "${NEWNAME}"; done
-	find /User/Applications/*/iFallDown.app/remove_ad_button.png | while read FILENAME; do NEWNAME=${FILENAME%.*}.bak; mv "${FILENAME}" "${NEWNAME}"; done
-	find /User/Applications/*/iFallDown.app/runstats_ad.png | while read FILENAME; do NEWNAME=${FILENAME%.*}.bak; mv "${FILENAME}" "${NEWNAME}"; done
-fi;
-
 ## END REMOVE BUILT IN ADS ##
-
-
 
 #################### BiteSMS to Messages Icon START ####################
 

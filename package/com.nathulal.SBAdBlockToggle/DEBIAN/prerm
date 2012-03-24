@@ -2,7 +2,9 @@
 /bin/launchctl unload /System/Library/LaunchDaemons/com.bigboss.sbsettingsd.plist
 
 rm /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid
-cp /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOff_hosts /etc/hosts
+cp /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOff_hosts /etc/hosts ;
+
+#plutil -rmkey WebKitDNSPrefetchingEnabled /private/var/mobile/Library/Preferences/com.apple.mobilesafari.plist;
 
 if [ -f /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png ]
 then
