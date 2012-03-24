@@ -320,16 +320,6 @@ find /User/Applications/*/HeyWire*.app -type f -name "SmaatoFooter.png" | while 
 find /User/Applications/*/Library/Preferences -type f -name "com.mediafriendsinc.iWire.plist" | while read FILENAME; do cp $FILENAME /private/var/tmp/iWire.plist; chmod 755 /private/var/tmp/iWire.plist; plutil -convert xml1 /private/var/tmp/iWire.plist; sed -e "s@<string>iad,smaato</string>@<string></string>@ig" /tmp/iWire.plist > /tmp/iWire2.plist; plutil -convert binary1 /tmp/iWire2.plist; mv /tmp/iWire2.plist $FILENAME; chmod 755 $FILENAME; done
 fi;
 
-#################### ESPN APPS START ####################
-
-( exec /private/var/mobile/Library/SBSettings/Commands/adblock_espn/espn_adblock.sh )
-while [ -f /tmp/wait_on_espn ]
-	do
-	echo "waiting for ESPN script to finish"
-done
-
-#################### ESPN APPS END ####################
-
 # PagesJaunes
 if [ -f /User/Applications/*/PagesJaunes.app/fond_loader_pub0.jpg ]
 	then
