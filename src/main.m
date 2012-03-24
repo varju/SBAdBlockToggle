@@ -26,12 +26,6 @@
 // 3g you would check that here.
 BOOL isCapable()
 {
-	NSFileManager *fileManager = [NSFileManager defaultManager];
-	NSString *tempAdBlockFile = @"/tmp/AdBlock-patchhelper.pid";
-	if([fileManager fileExistsAtPath:tempAdBlockFile])
-	{
-		return NO;
-	}
 	return YES;
 }
 
@@ -83,5 +77,4 @@ BOOL allowInCall()
 //When the user holds the button, your invokeHoldAction function will be called allowing you to handle the event.
 void invokeHoldAction() 
 {
-	notify_post("com.nathulal.AdBlockToggle.patchhelper");
 }
