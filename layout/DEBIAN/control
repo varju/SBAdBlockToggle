@@ -1,0 +1,10 @@
+Package: ca.varju.sbadblocktoggle
+Name: SBAdBlockToggle-varju
+Version: 2.3.6
+Architecture: iphoneos-arm
+Depends: sbsettings, wget, sed, grep, bzip2
+Maintainer: Alex Varju
+Author: Alex Varju
+Icon: file:///var/mobile/Library/SBSettings/Themes/Default/AdBlock/on.png
+Section: Addons (SBSettings)
+Description: Switch between AdBlock and Non-AdBlock host file using SBSettings.  This project was forked from version 2.3.5.5 of com.nathulal.SBAdBlockToggle.
