@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ -f /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png ]
+then
+	rm /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
+fi
+
+cp /var/mobile/Library/SBSettings/Toggles/AdBlock/missingImage.png /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
+
+/bin/launchctl load -w /System/Library/LaunchDaemons/com.bigboss.sbsettingsd.plist
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ $1 == install ]]; then
+    if [[ ${CYDIA+@} ]]; then
+        eval "echo 'finish:restart' >&${cydia[0]}"
+    fi
+elif [[ $1 == upgrade ]]; then
+    if [[ ${CYDIA+@} ]]; then
+        eval "echo 'finish:restart' >&${cydia[0]}"
+    fi
+fi
+exit 0

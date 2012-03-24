@@ -1,0 +1,62 @@
+Package: com.nathulal.SBAdBlockToggle
+Version: 2.0.6 
+Architecture: iphoneos-arm
+Depends: coreutils, sbsettings (>= 3.0.5), wget, ldid
+Author: nathulal <inathulal@gmail.com>
+dev: nathulal
+Icon: file:///var/mobile/Library/SBSettings/Themes/Default/AdBlock/on.png
+Section: SBSettings Addons
+Name: SBAdBlockToggle
+Homepage: http://code.google.com/p/iphoneadblocktoggle/
+Description: SBAdBlockToggle
+	Provides a way to switch between AdBlock and Non-AdBlock host file using SBSettings.
+	Recent Changes 
+	(v 1.2)
+	* Added dependency for coreutils. Thanks spamdumpster 
+	* Added icons for default theme. Thanks DarkLord468 
+	(v 1.3)
+	* Disabled iPhone App Kill switch while in adblock mode
+	(v1.4)
+	* Updated to the latest host file by rbisconti97 (05-Aug-2009)
+	(v1.5)
+	* Updated to the latest host file by rbisconti97 (06-Aug-2009)
+	(v1.6)
+	* Changed the icon colors to make it more obvious for AdBlock On and Off situations. (10-Aug-2009)
+	(v1.7)
+	* Updated to the latest host file by rbisconti97 (13-Aug-2009)
+	(v1.8)
+	* Updated to the toggle to automatically download the latest host file from rbisconti97 server. No more need to manually copy updated host files. Just toggle off and back on and in a few seconds depending on your connection speed you will have the latest file.
+	(v1.9)
+	* Updated to the deb to include the latest adblock host file as of 24-Oct-2009
+	* Includes new icons provided by rbisconti97
+	(v2.0)
+	* Disabled the missing image blue question mark that is displayed when adblock is on.
+	* By holding down on the toggle for a couple of seconds you can now patch the following APPS
+		SBSettings
+		Categories
+		Lockdown
+		BossPrefs
+		BossPaper
+		Docs2
+	This will come in handy when a new update is applied for any of those products. The user can now just patch them using the toggle.
+	NOTE: Please restart SpringBoard before trying to apply the patches. If you dont restart SpringBoard the patched apps may not launch
+	correctly. At that point you can just reload the SpringBoard and then apply the patch again using SpringBoard.
+	(v2.0.1)
+	* Fixed a missing dependency problem. ldid was required by 2.0 but was not marked as required by the package installer.
+	* Added functionality to support custom user host entries to the host file. The user can now create a 'UserHostEntries' file
+	  under /private/var/mobile/Library/Preferences and add custom entries to that file and they will be prepened to the host file by the toggle.
+	(v2.0.2)
+	* Removed the functionality of auto-updating the host file from the toggle since rbisconti97 is no longer supporting it
+	  and actually provide a file that will have all the ad-blocking turned off. I am now including the latest adblock
+	  host I have as of 25-Nov-2009
+	(v2.0.3)
+	* Added functionality of auto-updating host file back sicne rbisconti97 resumed the project.
+	(v2.0.4)
+	* Fixed functionality to auto-patch Lockdown2 and Categories updates.
+	(v2.0.5)
+	* Updated AdBlock update server to http://www.modyouri.com/adblock_hosts/hosts
+	(v2.0.6)
+	* Updated patchhelper to be compatiable with sbsetting ver 3.1.1-1
+
+
+
