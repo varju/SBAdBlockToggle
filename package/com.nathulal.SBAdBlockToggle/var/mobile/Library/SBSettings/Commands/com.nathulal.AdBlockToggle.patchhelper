@@ -124,30 +124,6 @@ if [ -f /Applications/Categories.app/Categories3 ]
 		echo "Patched Docs2"
 	fi;
 	
-	if [ -f /Applications/biteSMS.app/emusic.png ]
-	then
-		echo "Patching biteSMS ..."
-		killall biteSMS
-		mv /Applications/biteSMS.app/emusic.png /Applications/biteSMS.app/emuzic.png
-		mv /Applications/biteSMS.app/emusic-landscape.png /Applications/biteSMS.app/emuzic-landscape.png
-		mv /var/mobile/Library/SBSettings/Toggles/AdBlock/bitesms/emusic.png /Applications/biteSMS.app/emusic.png
-		echo "Patched biteSMS"
-	fi;
-
-	if [ ! -f /Applications/biteSMS.app/biteSMS/English.lproj/biteSMS.strings.orig ]
-	then
-		cp /Applications/biteSMS.app/English.lproj/biteSMS.strings /Applications/biteSMS.app/English.lproj/biteSMS.strings.orig
-	fi;
-
-	if [ -f /Applications/biteSMS.app/biteSMS ]
-	then
-		echo "Patching biteSMS ..."
-		killall biteSMS
-		find /Applications/biteSMS.app/English.lproj -type f -name "biteSMS.strings" | while read FILENAME; do sed -e "s@<string>biteSMS</string>@<string>ModYouri.com</string>@ig" $FILENAME > /tmp/tempbitestring.tmp; mv /tmp/tempbitestring.tmp $FILENAME; done
-		find /Applications/biteSMS.app/English.lproj -type f -name "biteSMS.strings" | while read FILENAME; do sed -e "s@<string>Thanks for supporting us\!</string>@<string>your iPhone, modified</string>@ig" $FILENAME > /tmp/tempbitestrings.tmp; mv /tmp/tempbitestrings.tmp $FILENAME; done
-		echo "Patched biteSMS"
-	fi;
-	
 	rm /tmp/AdBlock-patchhelper.pid
 	echo "Done. If you have trouble launching a patched app reload the SpringBoard and then try patching again."
 fi;
@@ -412,20 +388,6 @@ fi;
 
 ## END REMOVE BUILT IN ADS ##
 
-
-
-#################### BiteSMS to Messages Icon START ####################
-
-if [ -f /Applications/biteicontosms/bitesms_to_messages-inst.sh ]; 
-	then 
-( exec /Applications/biteicontosms/bitesms_to_messages-inst.sh )
-while [ -f /tmp/bitetosms ]
-	do
-	echo "waiting for bitetosms script to finish"
-done
-fi;
-
-#################### BiteSMS to Messages Icon END ####################
 
 # check/write permissions to /etc/sudoers
 if [ $(grep -c '%mobile ALL=(ALL) NOPASSWD: /bin/mv' /etc/sudoers) -ne 0 ]
