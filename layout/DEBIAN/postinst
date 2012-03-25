@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if [ -f /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png ]
-then
-	rm /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
-fi;
+SYSTEM_IMAGE=/System/Library/PrivateFrameworks/WebCore.framework/missingImage.png 
+CLEAR_IMAGE=/var/mobile/Library/SBSettings/Toggles/AdBlock/missingImage.png
+if [ -f $SYSTEM_IMAGE ]; then
+	mv $SYSTEM_IMAGE $CLEAR_IMAGE.orig
+  cp $CLEAR_IMAGE $SYSTEM_IMAGE
+fi
 
 plutil -rmkey WebKitDNSPrefetchingEnabled /private/var/mobile/Library/Preferences/com.apple.mobilesafari.plist;
-
-cp /var/mobile/Library/SBSettings/Toggles/AdBlock/missingImage.png /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
 
 /bin/launchctl load -w /System/Library/LaunchDaemons/com.bigboss.sbsettingsd.plist
 declare -a cydia

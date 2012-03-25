@@ -4,12 +4,12 @@
 rm /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid
 cp /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOff_hosts /etc/hosts
 
-if [ -f /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png ]
-then
-	rm /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
+SYSTEM_IMAGE=/System/Library/PrivateFrameworks/WebCore.framework/missingImage.png 
+CLEAR_IMAGE=/var/mobile/Library/SBSettings/Toggles/AdBlock/missingImage.png
+if [ -f $CLEAR_IMAGE.orig ]; then
+	rm $SYSTEM_IMAGE
+  mv $CLEAR_IMAGE.orig $SYSTEM_IMAGE
 fi
-
-cp /var/mobile/Library/SBSettings/Toggles/AdBlock/missingImage.orig /System/Library/PrivateFrameworks/WebCore.framework/missingImage.png
 
 
 declare -a cydia
