@@ -19,7 +19,22 @@
  #* You should have received a copy of the GNU General Public License
  #* along with iPhoneAdBlockToggle.  If not, see <http://www.gnu.org/licenses/>.
  #*/
- 
+
+download_update()
+{
+	rm -f /tmp/adblock_hosts
+	wget "http://hosts-file.net/ad_servers.asp" -O /tmp/adblock_hosts
+	if [ -f /tmp/adblock_hosts ]; then
+		FILESIZE=`stat -c %s /tmp/adblock_hosts`
+		echo "Size of new adblock_hosts file is $FILESIZE bytes"
+		if [ $FILESIZE -gt 0 ]; then
+		  cat /tmp/adblock_hosts | grep ^127 | grep -v localhost | sed -e 's|^127.0.0.1|0.0.0.0|' \
+		    > /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts
+		fi
+		rm /tmp/adblock_hosts
+	fi 
+}
+
 m_username=`whoami|grep .`
 if [ "$m_username" != "root" ]
 then
@@ -29,22 +44,7 @@ fi;
 
 if [ ! -f /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid ]
 then
-	if [ -f /tmp/adblock_hosts ]
-	then
-		rm /tmp/adblock_hosts
-	fi;
-
-	wget "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&useip=0.0.0.0" -O /tmp/adblock_hosts
-	if [ -f /tmp/adblock_hosts ]
-	then
-		FILESIZE=`stat -c %s /tmp/adblock_hosts`
-		echo "Size of new adblock_hosts file is $FILESIZE bytes"
-		if [ $FILESIZE -gt 0 ] ;
-		then
-		  grep ^0.0.0.0 /tmp/adblock_hosts > /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts
-		fi;
-		rm /tmp/adblock_hosts
-	fi;
+  download_update
 
 	echo "AdBlock On" > /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid
 
