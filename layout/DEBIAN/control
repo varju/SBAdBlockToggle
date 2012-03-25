@@ -2,7 +2,7 @@ Package: ca.varju.sbadblocktoggle
 Name: SBAdBlockToggle-varju
 Version: 2.4.0
 Architecture: iphoneos-arm
-Depends: sbsettings, wget, sed, grep, bzip2
+Depends: sbsettings, wget, sed, grep, coreutils
 Maintainer: Alex Varju
 Author: Alex Varju
 Icon: file:///var/mobile/Library/SBSettings/Themes/Default/AdBlock/on.png
