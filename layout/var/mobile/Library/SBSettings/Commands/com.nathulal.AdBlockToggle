@@ -44,7 +44,7 @@ fi;
 
 if [ ! -f /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid ]
 then
-  download_update
+  #download_update
 
 	echo "AdBlock On" > /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid
 
