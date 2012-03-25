@@ -33,26 +33,33 @@ then
 	then
 		rm /tmp/adblock_hosts
 	fi;
-	wget http://modyouri.com/adblock_hosts/hosts.bz2 -O /tmp/adblock_hosts.bz2
-	bunzip2 /tmp/adblock_hosts.bz2
+
+	wget "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&useip=0.0.0.0" -O /tmp/adblock_hosts
 	if [ -f /tmp/adblock_hosts ]
 	then
 		FILESIZE=`stat -c %s /tmp/adblock_hosts`
 		echo "Size of new adblock_hosts file is $FILESIZE bytes"
 		if [ $FILESIZE -gt 0 ] ;
 		then
-			mv /tmp/adblock_hosts /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts
-		else
-			rm /tmp/adblock_hosts
+		  grep ^0.0.0.0 /tmp/adblock_hosts > /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts
 		fi;
+		rm /tmp/adblock_hosts
 	fi;
+
 	echo "AdBlock On" > /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid
-	if [ -f /private/var/mobile/Library/Preferences/UserHostEntries ]
-	then
-		cat /private/var/mobile/Library/Preferences/UserHostEntries /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts > /etc/hosts
-	else
-		cp /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts /etc/hosts
-	fi;		
+
+  rm -f /etc/hosts
+  if [ -f /private/var/mobile/Library/Preferences/UserHostEntries ]; then
+  	echo "### USERHOSTENTRIES BEGIN ###" >> /etc/hosts
+    cat /private/var/mobile/Library/Preferences/UserHostEntries >> /etc/hosts
+  	echo "### USERHOSTENTRIES END ###" >> /etc/hosts
+  fi
+  cat /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOff_hosts >> /etc/hosts
+
+	echo "" >> /etc/hosts
+	echo "### ADBLOCK HOSTS BEGIN ###" >> /etc/hosts
+	cat /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlockOn_hosts >> /etc/hosts
+	echo "### ADBLOCK HOSTS END ###" >> /etc/hosts
 else
 	rm /var/mobile/Library/SBSettings/Toggles/AdBlock/AdBlock.pid
 	if [ -f /private/var/mobile/Library/Preferences/UserHostEntries ]
