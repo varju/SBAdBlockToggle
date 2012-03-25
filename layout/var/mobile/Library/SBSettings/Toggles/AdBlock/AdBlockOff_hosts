@@ -12,35 +12,7 @@ fe80::1%lo0	localhost
 ## APPLE KILL-SWITCH START ##
 0.0.0.0 iphone-services.apple.com
 ## APPLE KILL-SWITCH END ##
-## ADDED BY HACKULOUS SECURITY ##
-91.121.24.50	appulous.org
-91.121.24.50	www.appulous.org
-91.121.24.50	cydia.appulous.org
-91.121.24.50	apt.appulous.org
-91.121.24.50	ftp.appulous.org
-91.121.24.50	hackulous.org
-91.121.24.50	www.hackulous.org
-91.121.24.50	cydia.hackulous.org
-91.121.24.50	apt.hackulous.org
-91.121.24.50	ftp.hackulous.org
-91.121.24.50	installous.com
-91.121.24.50	www.installous.com
-91.121.24.50	cydia.installous.com
-91.121.24.50	apt.installous.com
-91.121.24.50	ftp.installous.com
-91.121.24.50	crackulous.net
-91.121.24.50	www.crackulous.net
-91.121.24.50	cydia.crackulous.net
-91.121.24.50	apt.crackulous.net
-91.121.24.50	ftp.crackulous.net
-91.121.24.50	haklab.com
-91.121.24.50	www.haklab.com
-91.121.24.50	cydia.haklab.com
-91.121.24.50	apt.haklab.com
-91.121.24.50	ftp.haklab.com
-91.121.24.50	themonkeysball.com
-91.121.24.50	www.themonkeysball.com
-91.121.24.50	cydia.themonkeysball.com
-91.121.24.50	apt.themonkeysball.com
-91.121.24.50	ftp.themonkeysball.com
-## END HACKULOUS SECURITY ##
+
+#<CDevReporter>
+127.0.0.1	iphonesubmissions.apple.com
+#</CDevReporter>
