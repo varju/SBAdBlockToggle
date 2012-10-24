@@ -368,7 +368,6 @@
 0.0.0.0 4th-screen.com
 0.0.0.0 www.ads.aapl.shazamid.com
 0.0.0.0 ads.aapl.shazamid.com
-0.0.0.0 .ads.aapl.shazamid.com
 0.0.0.0 bo.jumptap.com
 0.0.0.0 vg.jumptap.com
 0.0.0.0 connections.jumptap.com
@@ -407,7 +406,6 @@
 0.0.0.0 core.ringleaderdigital.com
 0.0.0.0 ads.bitesms.com
 0.0.0.0 connect.decknetwork.net ## TWITTERIFIC
-0.0.0.0 .medialytics.com
 0.0.0.0 medialytics.com
 0.0.0.0 mbfr.ad-inside.com ## DAILY MOTION
 0.0.0.0 www.data.flurry.com
@@ -422,7 +420,6 @@
 0.0.0.0 m.getaroom.com
 0.0.0.0 p1.vip.sc9.admob.com
 0.0.0.0 m.mspot.com
-0.0.0.0 .m-adx.com
 0.0.0.0 m-adx.com
 0.0.0.0 www.ad.m-adx.com
 0.0.0.0 ad.m-adx.com
@@ -440,7 +437,6 @@
 0.0.0.0 i.tv.s3.amazonaws.com
 0.0.0.0 slicehost.net
 0.0.0.0 cloudfront.net
-0.0.0.0 .cloudfront.net
 0.0.0.0 216-137-39-118.stl2.cloudfront.net
 0.0.0.0 stl2.cloudfront.net
 0.0.0.0 https://209-20-92-118.slicehost.net
@@ -462,7 +458,6 @@
 0.0.0.0 staging.looptcorp.com
 0.0.0.0 www.radiofeeds.co.uk ## WunderRadio
 0.0.0.0 tuned.mobi ## WunderRadio
-0.0.0.0 .mydas.mobi
 0.0.0.0 sky.adinfuse.com # SKYNEWS
 0.0.0.0 test.medialytics.com
 0.0.0.0 ads.cnn.com
@@ -473,10 +468,8 @@
 0.0.0.0 www.imeem.com
 0.0.0.0 asocialnetworkwhereonlyjoeisamember.api.imeem.com
 0.0.0.0 rcdn-http-vip-2.si01.chi1.imeem.net
-0.0.0.0 .imeem.com
 0.0.0.0 imeem.com
 0.0.0.0 atdmt.com
-0.0.0.0 .atdmt.com
 0.0.0.0 mobile.usablenet.com
 0.0.0.0 stop_international+.kia.com
 0.0.0.0 www.icarusstudios.com
@@ -7803,7 +7796,6 @@
 0.0.0.0 us.x1.yimg.com
 0.0.0.0 us.y1.yimg.com
 0.0.0.0 us.z1.yimg.com
-0.0.0.0 .hitbox.com
 0.0.0.0 1cgi.hitbox.com
 0.0.0.0 2cgi.hitbox.com
 0.0.0.0 adminec1.hitbox.com
