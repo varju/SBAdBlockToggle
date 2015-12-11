@@ -10,6 +10,6 @@ Changes in 2.4.1:
 
 Note: Apps are getting smarter and are saving ads to use when the ad server can't be contacted. You may need to reinstall apps to remove their ads.
 
-A packaged version of this project is available from this Cydia source:
+A packaged version of this project is available for manual installation from:
 
-    http://cydia.myrepospace.com/varju/
+    https://dl.dropboxusercontent.com/u/21013992/ca.varju.sbadblocktoggle_2.4.1-8_iphoneos-arm.deb
